@@ -22,7 +22,8 @@ app.use(bodyParser.json());
 mongoose
     .connect(process.env.Mongo_url)
     .then(() => {
-        console.log("Database connected succesfully")
+        console.log("Database connected succesfully"),
+        { useNewUrlParser: true, useUnifiedTopology: true }
     })
 
 
