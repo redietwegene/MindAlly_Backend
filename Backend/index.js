@@ -44,6 +44,9 @@ app.use(cors({
   allowedHeaders: ['Content-Type'],
   credentials:true
 }));
+app.get("/", (req, res) => {
+    res.send("Api is working correctly")
+})
 
 
 app.use("/api/user", userRoutes)
