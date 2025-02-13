@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/auth/therapistSignup:
+ * /api/user/therapistSignup:
  *   post:
  *     summary: Register a new therapist
  *     tags:
@@ -42,7 +42,7 @@ router.post("/therapistSignup", registerTherapist);
 
 /**
  * @swagger
- * /api/auth/Login:
+ * /api/user/Login:
  *   post:
  *     summary: Login an existing user
  *     tags:
@@ -72,7 +72,7 @@ router.post("/Login", Login);
 
 /**
  * @swagger
- * /api/auth/PatientSignup:
+ * /api/user/PatientSignup:
  *   post:
  *     summary: Register a new patient
  *     tags:
